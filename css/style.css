@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    margin: 0 auto;
+    text-align: center;
+}
+.img_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 이미지 반응형으로 만들기 */
+.img_box img {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+img{
+    display: block;
+}
+
+/* 공통 버튼 스타일 (그대로 유지) */
+.top.fixed,
+.fixed2 {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #C6291A;
+  color: #C6291A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: background 0.3s ease;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: #fff;
+}
+
+.top.fixed:hover,
+.fixed2:hover {
+  background-color: #C6291A;
+  color: #fff;
+}
+
+/* Top 버튼: 우측 하단 */
+.top.fixed {
+  bottom: 90px;
+  right: 20px;
+}
+
+/* Back 버튼: 우측 하단 (조금 아래) */
+.fixed2 {
+  bottom: 30px;
+  right: 20px;
+}
